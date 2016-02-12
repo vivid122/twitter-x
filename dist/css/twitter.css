@@ -75,7 +75,7 @@ textarea {
   font-size: 13px;
   margin-top: 17px;
   margin-left: 3px;
-  float: left;
+  display: inline-block;
 }
 
 .twitter {
@@ -102,10 +102,10 @@ textarea {
 }
 
 #search {
-  float: left;
+  position: absolute;
+  right: 245px;
+  top: 15px;
   border: 1px;
-  margin-top: 8px;
-  margin-left: 8px;
   width: 150px;
   background-color: #f5f8fa;
   outline: medium;
@@ -113,21 +113,18 @@ textarea {
 #search:focus {
   background: white;
 }
-
-.search-icon {
-  margin-right: 3px;
-  width: 16px;
-  height: 20px;
-  margin-top: 17px;
+#search:focus + .search {
+  background: white;
 }
 
 .search-i {
-  margin-right: 3px;
   height: 20px;
   width: 16px;
   outline: none;
   background: url(../img/search.jpg) no-repeat;
   border: 0;
+  margin-left: 155px;
+  margin-top: 17px;
 }
 
 .image {

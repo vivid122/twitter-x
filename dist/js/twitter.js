@@ -4,73 +4,73 @@
 //顶栏搜索框的变色
 var search=document.getElementById('search');
 var searchfocus=document.getElementById('s-search');
-  search.onfocus=function(){
+  search.addEventListener("focus", function(){
   	searchfocus.style.backgroundColor="white";
-  }
-  search.onblur=function(){
+  })
+  search.addEventListener("blur", function(){
   	searchfocus.style.backgroundColor="rgb(245,248,250)";
-  }
+  })
 
 var txt = document.getElementById('textarea');
 var m1 = document.getElementById('m1');
- txt.onfocus=function(){
+ txt.addEventListener("focus", function(){
  	 m1.style.display="block";
- }
-  txt.onblur=function(){
+ })
+  txt.addEventListener("blur", function(){
 	 m1.style.display="none";
-}
+})
 
 //发推弹出效果
 var twitte = document.getElementById('twi-sub');
 var outer = document.getElementById('outer');
 var close_0 = document.getElementById('close-0');
 var body =document.getElementsByTagName('body');
-  twitte.onclick=function  () {
+  twitte.addEventListener("click", function(){
   	outer.style.display="block";
   	body[0].style.overflow="hidden";
-  }
-  close_0.onclick=function  () {
+  })
+  close_0.addEventListener("click", function(){
   	outer.style.display="none";
   	body[0].style.overflow="visible";
-  }
+  })
 
 
 //关闭推荐关注
 var close0 = document.getElementById('close-b0');
 var su_view0=document.getElementById("su-view0");
-close0.onclick=function () {
+close0.addEventListener("click", function(){
    su_view0.className="disappear";
-}
+})
 var close1 = document.getElementById('close-b1');
 var su_view1=document.getElementById("su-view1");
-close1.onclick=function () {
+close1.addEventListener("click", function(){
    su_view1.className="disappear";
-}
+})
 var close2 = document.getElementById('close-b2');
 var su_view2=document.getElementById("su-view2");
-close2.onclick=function () {
+close2.addEventListener("click", function(){
    su_view2.className="disappear";
-}
+})
 //关注/正在关注
     
  var button0 = document.getElementById('view0');
-  button0.onclick = function (){
+  button0.addEventListener("click", function(){
     button0.innerHTML="正在关注";
     button0.id="outbutton";
     setTimeout(function(){su_view0.style.display="none";},10000);
-  }
+  })
   var button1 = document.getElementById('view1');
-  button1.onclick = function (){
+  button1.addEventListener("click", function(){
     button1.innerHTML="正在关注";
     button1.id="outbutton";
     setTimeout(function(){su_view1.style.display="none";},10000);
-  }
+  })
   var button2 = document.getElementById('view2');
-  button2.onclick = function (){
+  button2.addEventListener("click", function(){
     button2.innerHTML="正在关注";
     button2.id="outbutton";
      setTimeout(function(){su_view2.style.display="none";},10000);
-  }
+  })
 
  // var button0x = document.getElementById('outbutton');
  //    button0x.onmouseover = function(){
@@ -114,12 +114,12 @@ close2.onclick=function () {
       counterx.style.color="red";
      };
    }
-   txt.onkeydown=function (){count("textarea","counter")};
-   txt.onkeyup=function (){count("textarea","counter")};
+   txt.addEventListener("keydown", function(){count("textarea","counter")});
+   txt.addEventListener("click", function(){count("textarea","counter")});
    
    var txtx = document.getElementById('textareax');
-   txtx.onkeydown=function (){count("textareax","counterx")};
-   txtx.onkeyup=function (){count("textareax","counterx")};
+   txtx.addEventListener("click", function(){count("textareax","counterx")});
+   txtx.addEventListener("click", function(){count("textareax","counterx")});
 
   
 
