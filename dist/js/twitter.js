@@ -1,16 +1,5 @@
 
 
-
-//顶栏搜索框的变色
-var search=document.getElementById('search');
-var searchfocus=document.getElementById('s-search');
-  search.addEventListener("focus", function(){
-  	searchfocus.style.backgroundColor="white";
-  })
-  search.addEventListener("blur", function(){
-  	searchfocus.style.backgroundColor="rgb(245,248,250)";
-  })
-
 var txt = document.getElementById('textarea');
 var m1 = document.getElementById('m1');
  txt.addEventListener("focus", function(){
